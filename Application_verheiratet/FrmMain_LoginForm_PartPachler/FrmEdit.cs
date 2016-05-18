@@ -26,6 +26,9 @@ namespace FrmMain_LoginForm_PartPachler
             "There is no character before the '@'",
             "There is a '.' at the start, end or next to the '@'",
             "Includes invalid characters"};
+
+        private bool btnAddClicked = false;
+        private bool btnSubClicked = false;
         #endregion
 
         #region Properties
@@ -125,15 +128,20 @@ namespace FrmMain_LoginForm_PartPachler
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            amount += (double)nud.Value;
+            if(!btnAddClicked) amount += (double)nud.Value;
+            btnAddClicked = true;
         }
         private void btnSub_Click(object sender, EventArgs e)
         {
-            amount -= (double)nud.Value;
+            if (!btnSubClicked) amount -= (double)nud.Value;
+            btnSubClicked = true;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            btnAddClicked = false;
+            btnSubClicked = false;
+
             try
             {
                 switch (mode)
