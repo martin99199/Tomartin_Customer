@@ -146,7 +146,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(328, 33);
             this.btnAdd.TabIndex = 8;
-            this.btnAdd.Text = "Add money paid (+)";
+            this.btnAdd.Text = "Subtract money the customer paid me (-)";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnSub_Click);
             // 
@@ -156,7 +156,7 @@
             this.btnSub.Name = "btnSub";
             this.btnSub.Size = new System.Drawing.Size(328, 33);
             this.btnSub.TabIndex = 7;
-            this.btnSub.Text = "Subtract money owed (-)";
+            this.btnSub.Text = "Add money the customer owes me (+)";
             this.btnSub.UseVisualStyleBackColor = true;
             this.btnSub.Click += new System.EventHandler(this.btnAdd_Click);
             // 

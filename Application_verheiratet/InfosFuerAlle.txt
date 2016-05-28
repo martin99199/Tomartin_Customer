@@ -13,7 +13,9 @@ hab das Event btn_cancel geändert.
 Tobias: 
 Bei mehrmaligen betätigen der Buttons Sub... & Add... 
 wird der Betrag mehrmals geändert ohne jegliche Benachrichtigung.
+(erledigt)
 
 Bei der Übertragung des Betrags liegt ein Vorzeichenfehler zwischen 
 edit-Form und Main-Form vor. 
+(erledigt)
 Internen Klärung was positiv und was negativ ist!!!
